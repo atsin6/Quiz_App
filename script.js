@@ -85,7 +85,7 @@ function generateQueDiv(i) {
     `Time left\n${String(Math.floor(timeleft / 60)).padStart(2, "0")}:` +
     `${String(timeleft % 60).padStart(2, "0")}`;
   que.innerHTML = data[i].question;
-  queNo.innerHTML = `Question ${i + 1}/4`;
+  queNo.innerHTML = `Question ${i + 1}/${data.length}`;
 
   ["a", "b", "c", "d"].forEach((opt) => {
     let optDiv = document.createElement("div");
